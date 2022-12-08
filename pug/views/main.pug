@@ -1,0 +1,13 @@
+html
+    head
+        style
+            include ./style.css
+        title= titulo
+    body(class='body')
+        form(class="form" action='/productos' method='post' name='myForm')
+            h4="Complete los campos a continuación"
+            input(class="input" type="text" name="title" placeholder="título")
+            input(class="input" type="number" name="price" min="0.1" step=".01" placeholder="precio")
+            input(class="input" type="text" name="thumbnail" placeholder="foto")
+            input(class="btn" value="Enviar" type="submit")
+    input(class='btn' type="button" onclick="location.href='/productos';" value="ver productos")

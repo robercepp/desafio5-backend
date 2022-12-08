@@ -1,0 +1,24 @@
+html
+    head
+        style
+            include ./style.css
+        title= titulo
+    body(class='body')
+        h2(class='titulo')= titulo
+
+        if lista.length >= 1
+            table(class='table')
+                tr(class='tr1')
+                    th(class='th1') NOMBRE
+                    th(class='th2') PRECIO
+                    th(class='th3') FOTO
+                each product in lista
+                    tr(class='tr2')
+                        td(class='td1')= product.title
+                        td(class='td2') $#{product.price}-
+                        td(class='td3') 
+                            img(class='img', src=product.thumbnail)
+        else 
+            strong no hay encontraron productos
+
+    input(class='btn' type="button" onclick="location.href='/';" value="atras")

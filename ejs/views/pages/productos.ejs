@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title><%= titulo %></title>
+</head>
+<body class="body">
+    <% if (lista.length >= 1) { %>
+        <table class="table">
+            <tr class="tr1">
+                <th class="th1">NOMBRE</th>
+                <th class="th2">PRECIO</th>
+                <th class="th3">FOTO</th>
+            </tr>
+    <%lista.forEach(function(producto){ %>
+        <tr class="tr2">
+            <td class="td1"><%=producto.title%></td>
+            <td class="td2"><%=producto.price%></td>
+            <td class="td3"><img src="<%=producto.thumbnail%>" ></td>
+        </tr>
+    <% }) %>
+        </table>
+    <%} else {%>
+        <strong>no hay encontraron productos</strong>
+    <% } %>
+    <input class="btn" type="button" onclick="location.href='/';" value="atras">
+</script>
+</body>
+</html>

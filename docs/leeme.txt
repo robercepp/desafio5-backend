@@ -1,0 +1,13 @@
+Alumno: Robertino Cepparo
+Curso: Programación Backend
+Ins: Coderhouse
+Comisión 40280
+Trabajo: Entrega de Desafío n° 5 "Motores de plantillas"
+
+Observaciones con respecto a los 3 motores usados.
+Tras haber realizado el trabajo de renderizado usando 3 motores de plantillas distintos (EJS, Handlebars y PUG) encuentro las siguientes Observaciones:
+1- el uso e implementación si bien son similares, PUG es un poco mas amigable para trabajar al no requerir sintaxis complicadas.
+2- la implementacion de condicionales y helpers se hace un tanto dificultoso con Handlebars, pero una vez encontrada la forma, se vuelve sencillo. 
+3- el uso, apertura y cierre de llaves para inserción de codigo en EJS se vuelve un tanto confuso cosa que no pasa en PUG ni en Handlebars.
+
+Conclusión: prefiero mucho mas PUG para trabajar ya que permite un flujo de trabajo mucho más agil al no tener que estar utilizando sintaxis complicadas, su instalación y ejecución me parecieron sencillas y no tuve mayores complicaciones al hacer este desafío con el mismo. 
